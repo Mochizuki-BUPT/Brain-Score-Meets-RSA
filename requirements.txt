@@ -1,0 +1,29 @@
+# Brain-Score Meets RSA - Dependencies
+# Reference: ICASSP 2026 Paper
+# 
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.14.1
+
+# Machine learning
+scikit-learn==1.6.1
+
+# Deep learning
+torch==2.7.0
+transformers==4.57.1
+
+# EEG data processing
+mne==1.9.0
+
+# Data I/O
+joblib==1.4.2
+h5py==3.13.0
+
+# Configuration
+pyyaml==6.0.2
+
+# Progress bar
+tqdm==4.66.5
