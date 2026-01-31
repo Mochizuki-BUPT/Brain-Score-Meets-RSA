@@ -1,0 +1,296 @@
+# Model Configuration
+# 47 LLMs used in the study
+
+paths:
+  eeg_dir: "./data/eeg"
+  llm_dir: "./data/representations"
+  output_dir: "./results"
+
+models:
+  # Qwen2.5 Series (10 models)
+  Qwen2.5-0.5B:
+    layers: 24
+    params: "0.5B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-0.5B"
+  
+  Qwen2.5-0.5B-Instruct:
+    layers: 24
+    params: "0.5B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-0.5B-Instruct"
+  
+  Qwen2.5-1.5B:
+    layers: 28
+    params: "1.5B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-1.5B"
+  
+  Qwen2.5-1.5B-Instruct:
+    layers: 28
+    params: "1.5B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-1.5B-Instruct"
+  
+  Qwen2.5-3B:
+    layers: 36
+    params: "3B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-3B"
+  
+  Qwen2.5-3B-Instruct:
+    layers: 36
+    params: "3B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-3B-Instruct"
+  
+  Qwen2.5-7B:
+    layers: 28
+    params: "7B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-7B"
+  
+  Qwen2.5-7B-Instruct:
+    layers: 28
+    params: "7B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-7B-Instruct"
+  
+  Qwen2.5-14B:
+    layers: 48
+    params: "14B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-14B"
+  
+  Qwen2.5-14B-Instruct:
+    layers: 48
+    params: "14B"
+    family: "Qwen2.5"
+    huggingface: "Qwen/Qwen2.5-14B-Instruct"
+
+  # Qwen3 Series (10 models)
+  Qwen3-0.6B:
+    layers: 28
+    params: "0.6B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-0.6B"
+  
+  Qwen3-0.6B-base:
+    layers: 28
+    params: "0.6B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-0.6B-Base"
+  
+  Qwen3-1.7B:
+    layers: 28
+    params: "1.7B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-1.7B"
+  
+  Qwen3-1.7B-base:
+    layers: 28
+    params: "1.7B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-1.7B-Base"
+  
+  Qwen3-4B:
+    layers: 36
+    params: "4B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-4B"
+  
+  Qwen3-4B-base:
+    layers: 36
+    params: "4B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-4B-Base"
+  
+  Qwen3-8B:
+    layers: 36
+    params: "8B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-8B"
+  
+  Qwen3-8B-base:
+    layers: 36
+    params: "8B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-8B-Base"
+  
+  Qwen3-14B:
+    layers: 40
+    params: "14B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-14B"
+  
+  Qwen3-14B-base:
+    layers: 40
+    params: "14B"
+    family: "Qwen3"
+    huggingface: "Qwen/Qwen3-14B-Base"
+
+  # DeepSeek-R1 Series (5 models)
+  DeepSeek-R1-Distill-Qwen-1.5B:
+    layers: 28
+    params: "1.5B"
+    family: "DeepSeek-R1"
+    huggingface: "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  
+  DeepSeek-R1-Distill-Qwen-7B:
+    layers: 28
+    params: "7B"
+    family: "DeepSeek-R1"
+    huggingface: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+  
+  DeepSeek-R1-Distill-Qwen-14B:
+    layers: 48
+    params: "14B"
+    family: "DeepSeek-R1"
+    huggingface: "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
+  
+  DeepSeek-R1-0528-Qwen3-8B:
+    layers: 36
+    params: "8B"
+    family: "DeepSeek-R1"
+    huggingface: "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+  
+  DeepSeek-R1-Distill-Llama-8B:
+    layers: 32
+    params: "8B"
+    family: "DeepSeek-R1"
+    huggingface: "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+
+  # Llama Series (10 models)
+  Llama-2-7B:
+    layers: 32
+    params: "7B"
+    family: "Llama-2"
+    huggingface: "meta-llama/Llama-2-7b"
+
+  Llama-2-7B-HF:
+    layers: 32
+    params: "7B"
+    family: "Llama-2"
+    huggingface: "meta-llama/Llama-2-7b-hf"
+  
+  Llama-3-8B:
+    layers: 32
+    params: "8B"
+    family: "Llama-3"
+    huggingface: "meta-llama/Meta-Llama-3-8B"
+  
+  Llama-3-8B-Instruct:
+    layers: 32
+    params: "8B"
+    family: "Llama-3"
+    huggingface: "meta-llama/Meta-Llama-3-8B-Instruct"
+  
+  Llama-3.1-8B:
+    layers: 32
+    params: "8B"
+    family: "Llama-3.1"
+    huggingface: "meta-llama/Llama-3.1-8B"
+  
+  Llama-3.1-8B-Instruct:
+    layers: 32
+    params: "8B"
+    family: "Llama-3.1"
+    huggingface: "meta-llama/Llama-3.1-8B-Instruct"
+  
+  Llama-3.2-1B:
+    layers: 16
+    params: "1B"
+    family: "Llama-3.2"
+    huggingface: "meta-llama/Llama-3.2-1B"
+  
+  Llama-3.2-1B-Instruct:
+    layers: 16
+    params: "1B"
+    family: "Llama-3.2"
+    huggingface: "meta-llama/Llama-3.2-1B-Instruct"
+  
+  Llama-3.2-3B:
+    layers: 28
+    params: "3B"
+    family: "Llama-3.2"
+    huggingface: "meta-llama/Llama-3.2-3B"
+  
+  Llama-3.2-3B-Instruct:
+    layers: 28
+    params: "3B"
+    family: "Llama-3.2"
+    huggingface: "meta-llama/Llama-3.2-3B-Instruct"
+
+  # Mistral Series (2 models)
+  Mistral-7B-v0.3:
+    layers: 32
+    params: "7B"
+    family: "Mistral"
+    huggingface: "mistralai/Mistral-7B-v0.3"
+  
+  Mistral-7B-Instruct-v0.3:
+    layers: 32
+    params: "7B"
+    family: "Mistral"
+    huggingface: "mistralai/Mistral-7B-Instruct-v0.3"
+
+  # Other Models (10 models)
+  Cerebras-GPT-6.7B:
+    layers: 32
+    params: "6.7B"
+    family: "Cerebras-GPT"
+    huggingface: "cerebras/Cerebras-GPT-6.7B"
+  
+  FairseqDense-6.7B:
+    layers: 32
+    params: "6.7B"
+    family: "OPT"
+    huggingface: "facebook/opt-6.7b"
+  
+  Galactica-6.7B:
+    layers: 32
+    params: "6.7B"
+    family: "Galactica"
+    huggingface: "facebook/galactica-6.7b"
+  
+  LeoLM-7B:
+    layers: 32
+    params: "7B"
+    family: "LeoLM"
+    huggingface: "LeoLM/leo-hessianai-7b"
+  
+  MPT-7B:
+    layers: 32
+    params: "7B"
+    family: "MPT"
+    huggingface: "mosaicml/mpt-7b"
+  
+  Pythia-6.9B:
+    layers: 32
+    params: "6.9B"
+    family: "Pythia"
+    huggingface: "EleutherAI/pythia-6.9b"
+  
+  Vicuna-7b-v1.5:
+    layers: 32
+    params: "7B"
+    family: "Vicuna"
+    huggingface: "lmsys/vicuna-7b-v1.5"
+  
+  Xwin-LM-7B-V0.2:
+    layers: 32
+    params: "7B"
+    family: "Xwin-LM"
+    huggingface: "Xwin-LM/Xwin-LM-7B-V0.2"
+  
+  tiiuae-falcon-7b:
+    layers: 32
+    params: "7B"
+    family: "Falcon"
+    huggingface: "tiiuae/falcon-7b"
+  
+  Qwen2.5-Math-7B:
+    layers: 28
+    params: "7B"
+    family: "Qwen2.5-Math"
+    huggingface: "Qwen/Qwen2.5-Math-7B"
