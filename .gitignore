@@ -36,3 +36,6 @@ results/
 # OS
 .DS_Store
 Thumbs.db
+
+# Docs
+*.pdf
